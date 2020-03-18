@@ -8,6 +8,28 @@ A rebuild of node and native addon modules with truffle-js via GraalVM by Oracle
 
 # Installing prebuilt.
 
+# Installing vertx Distribution ES4x
+```sh
+# install
+yarn global add es4x-pm # OR npm install -g es4x-pm
+
+# create a project file
+es4x init
+
+# create a hello world
+cat << EOF
+vertx.createHttpServer()
+  .requestHandler(req => req.response().end('Hello ES4X world!'))
+  .listen(8080);
+EOF > index.js
+
+# install dependencies (npm and maven)
+yarn # OR npm install
+
+# run it
+yarn start # OR npm start
+```
+
 # Build
 
 ## linux
