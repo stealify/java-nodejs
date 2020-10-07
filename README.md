@@ -11,6 +11,11 @@ A rebuild of node and native addon modules with truffle-js via GraalVM by Oracle
 
 # Installing prebuilt.
 
+## With npm already installed on the system
+npm i -g 
+
+
+
 # Installing vertx Distribution ES4x
 ```sh
 # install
