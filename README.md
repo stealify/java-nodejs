@@ -1,7 +1,10 @@
 # node-graalvm
 Node.JS on GraalVM
 
-This project enables Node.js use GraalVM and its Higperformance JavaScript engine. This project is still work in progress and not an officially supported Node.js branch. For more context into this project, please refer to the original PR.
+This project enables Node.js to use GraalVM and its Higperformance JavaScript engine via C Bindings to GraalVM. This project is still work in progress and not an officially supported Node.js branch. For more context into this project, please refer to the original PR.
+
+It Also includes a NodeJS Compatible GraalJS Runtime Implementation Its goal is To Replace NodeJS with a more performant Solution for Services and Command Line scripting. NodeJS Was a good Project but it can Physical never reach the Performance of a Meta-circular evaluator stack like GraalVM offers it. The Development
+of Nativ Integrations is also much more fast in Java Most Times and there is still nothing stoping us from calling c if needed.
 
 # How it works?
 A rebuild of node and native addon modules with truffle-js via GraalVM by Oracle Labs.
@@ -37,3 +40,8 @@ yarn start # OR npm start
 ## macos
 
 ## Windows
+
+
+## References
+https://github.com/joeferner/node-java
+this project is the succesor of the stealify/node-java fork
