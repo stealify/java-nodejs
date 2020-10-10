@@ -6,6 +6,8 @@ This project enables Node.js to use GraalVM and its Higperformance JavaScript en
 It Also includes a NodeJS Compatible GraalJS Runtime Implementation Its goal is To Replace NodeJS with a more performant Solution for Services and Command Line scripting. NodeJS Was a good Project but it can Physical never reach the Performance of a Meta-circular evaluator stack like GraalVM offers it. The Development
 of Nativ Integrations is also much more fast in Java Most Times and there is still nothing stoping us from calling c if needed.
 
+@direktspeed/jnjs is the repo for the java-nodejs implementation
+
 # How it works?
 A rebuild of node and native addon modules with truffle-js via GraalVM by Oracle Labs.
 
